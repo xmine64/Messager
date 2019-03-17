@@ -1,0 +1,33 @@
+﻿<Page x:Class="Messager.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Messager"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="LoginPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Margin="5">IP:</Label>
+        <Label Grid.Row="1" Grid.Column="0" Margin="5">Port:</Label>
+        <Label Grid.Row="2" Grid.Column="0" Margin="5">User Name:</Label>
+        <Label Grid.Row="3" Grid.Column="0" Margin="5">Password:</Label>
+        <TextBox x:Name="txtIP" Grid.Row="0" Grid.Column="1" Margin="5">localhost</TextBox>
+        <TextBox x:Name="txtPort" Grid.Row="1" Grid.Column="1" Margin="5">260</TextBox>
+        <TextBox x:Name="txtUname" Grid.Row="2" Grid.Column="1" Margin="5">anonymous</TextBox>
+        <TextBox x:Name="txtPass" Grid.Row="3" Grid.Column="1" Margin="5"></TextBox>
+        <Button Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Height="30" Margin="5" Click="Button_Click">Connect</Button>
+    </Grid>
+</Page>
